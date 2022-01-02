@@ -14,33 +14,31 @@ function toggleActiveClass(event) {
 }
 
 function clearPage() {
-    // remove all children from divContent
-    // use a loop to remove each child from divContent
     if (divContent.children[1]) {
-        divContent.lastElementChild.remove()
-    }
-    else {return}
+        divContent.removeChild(divContent.children[1]);
+    } else { return }
+    
 }
 
 function whatButtonWasClicked(button) {
     const buttonName = button.textContent;
     if (buttonName === "Home") {
-        clearPage();
-        createHomePage();
+        // clearPage();
+        createHomeContent(divContent);
     } else if (buttonName === "Menu") {
-        clearPage();
-        createMenuPage();
+        // clearPage();
+        createMenuPage(divContent);
     } else if (buttonName === "Contact") {
-        clearPage();
-        createContactPage();
+        // clearPage();
+        createContactPage(divContent);
     }
 };
 
 for (var i = 0; i < navButton.length; i++){
     navButton[i].addEventListener("click", function() {
-        this.classList.toggle("active");
+        // this.classList.toggle("active");
         clearPage()
-        // whatButtonWasClicked(this)
+        whatButtonWasClicked(this)
         // check what button was clicked and load the corresponding page
-        createContactPage(divContent);
+        // createContactPage(divContent);
 })};
