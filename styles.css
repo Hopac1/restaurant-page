@@ -1,3 +1,7 @@
+@font-face {
+    font-family: HarryPotter; src: url("harry-p.ttf");
+}
+
 body, html {
     height: 100%;
     margin: 0;
@@ -15,16 +19,12 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-
-    font-family: 'Dongle', sans-serif;
-    font-family: 'Roboto', sans-serif;
-    font-family: 'Sarpanch', sans-serif;
+    
+    font-family: HarryPotter, sans-serif;
 }
 
 button {
-    font-family: 'Dongle', sans-serif;
-    font-family: 'Roboto', sans-serif;
-    font-family: 'Sarpanch', sans-serif;
+    font-family: HarryPotter, sans-serif;
 }
 
 /* HEADER */
@@ -42,7 +42,7 @@ button {
     border-radius: 5px;
 
     text-shadow: 0px 0px 12px rgb(255 255 255 / 40%) !important;
-    font-size: 32px;
+    font-size: 3rem;
 
     color: rgb(214, 244, 255);
 
@@ -51,13 +51,10 @@ button {
 }
 
 .nav-btn:hover {
-    /* background-color: rgb(252, 105, 79); */
     border-color: rgb(252, 162, 146);
     box-shadow: inset 0 0 25px red;
     color: rgb(104, 155, 212);
-    /* border-top: 5px solid rgb(135, 206, 235);
-    border-bottom: 5px solid rgb(135, 206, 235);
-    border-color: rgb(252, 162, 146); */
+    cursor: pointer;
 }
 
 .active {
@@ -85,4 +82,5 @@ h2 {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    font-size: 1.5rem;
 }
