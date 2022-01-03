@@ -1,10 +1,10 @@
 
 function createHomePage(divContent) {
     // h1 header
-    let headerDiv = document.createElement('div');
+    let headerDiv = document.createElement("div");
     headerDiv.className = "header-div";
-    let h1 = document.createElement('h1');
-    h1.textContent = 'Zakera Cafe';
+    let h1 = document.createElement("h1");
+    h1.textContent = "Weasleys' Wizard Wheezes";
     headerDiv.appendChild(h1);
 
     // nav buttons
@@ -29,9 +29,9 @@ function createHomePage(divContent) {
     
     
     // image of food
-    // let image = document.createElement('img');
-    // image.src = '../src/chicken.jpg';
-    // image.alt = 'chicken-image';
+    // let image = document.createElement("img");
+    // image.src = "../src/chicken.jpg";
+    // image.alt = "chicken-image";
     
     // append all three to container div
     // main.appendChild(image);
@@ -43,13 +43,13 @@ function createHomePage(divContent) {
 
 function createHomeContent(divContent) {
     // container div
-    let main = document.createElement('div');
+    let main = document.createElement("div");
     main.className = "main";
     
     // descriptive text
-    let homeContent = document.createElement('div');
+    let homeContent = document.createElement("div");
     homeContent.className = "info-div";
-    let slogan = document.createElement('h2');
+    let slogan = document.createElement("h2");
     slogan.textContent = "\"I'm Commander Shepard, and this is my favourite cafe on the Citadel!\" - Commander Shepard";
     
     let description = document.createElement("p");
