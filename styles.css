@@ -13,7 +13,6 @@ h1 {
 }
 
 body {
-    /* background-image: url("../src/pizza.jpg"); */
     background-color: rgb(28, 37, 158);
     height: 100%;
     background-position: center;
@@ -77,6 +76,7 @@ h2 {
     color: white;
 }
 
+/* Home */
 .info-div {
     display: flex;
     justify-content: center;
@@ -84,3 +84,19 @@ h2 {
     flex-direction: column;
     font-size: 1.5rem;
 }
+
+/* Menu */
+
+.menu-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+}
+
+.menu-item {
+    height: 15rem;
+    width: 15rem;
+    object-fit: scale-down;
+}
+
+/* Contact */
