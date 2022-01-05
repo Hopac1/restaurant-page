@@ -5,6 +5,12 @@ function createHomePage(divContent) {
     headerDiv.className = "header-div";
     let h1 = document.createElement("h1");
     h1.textContent = "Weasleys' Wizard Wheezes";
+    
+    let image = document.createElement("img");
+    image.className = "shop-logo";
+    image.src = "images/shop-logo.png";
+    image.alt = "shop-logo";
+    headerDiv.appendChild(image);
     headerDiv.appendChild(h1);
 
     // nav buttons
