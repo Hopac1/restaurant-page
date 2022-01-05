@@ -2,28 +2,36 @@ function createMenuPage(divContent) {
     const menuContainer = document.createElement("div");
     menuContainer.className = "menu-container";
 
-    let menuItem = createMenuItem("pumpkin-pasties", ".jpg");
-    menuContainer.appendChild(menuItem);
-
-    menuItem = createMenuItem("hogwarts-crest-pie", ".jpg");
-    menuContainer.appendChild(menuItem);
-
-    menuItem = createMenuItem("chocolate-frog", ".png");
-    menuContainer.appendChild(menuItem);
-
+    let menuItem = createMenuItem("chocolate-frog", ".png");
+    let itemContainer = createItemName("Chocolate Frog - 4.95");
+    itemContainer.appendChild(menuItem)
+    menuContainer.appendChild(itemContainer);
 
     menuItem = createMenuItem("bertie-botts-beans", ".png");
-    menuContainer.appendChild(menuItem);
+    itemContainer = createItemName("Bertie Bott's Every Flavour Beans - 8.95");
+    itemContainer.appendChild(menuItem)
+    menuContainer.appendChild(itemContainer);
 
-    menuItem = createMenuItem("butterbeer", ".png");
-    menuContainer.appendChild(menuItem);
-
+    
     menuItem = createMenuItem("exploding-bon-bons", ".png");
-    menuContainer.appendChild(menuItem);
-
+    itemContainer = createItemName("Exploding Bon Bons - 8.00");
+    itemContainer.appendChild(menuItem)
+    menuContainer.appendChild(itemContainer);
+    
     menuItem = createMenuItem("fizzing-whizzbees", ".png");
-    menuContainer.appendChild(menuItem);
-
+    itemContainer = createItemName("Fizzing Whizzbees - 8.00");
+    itemContainer.appendChild(menuItem)
+    menuContainer.appendChild(itemContainer);
+    
+    menuItem = createMenuItem("butterbeer", ".png");
+    itemContainer = createItemName("Butterbeer - 3.95");
+    itemContainer.appendChild(menuItem)
+    menuContainer.appendChild(itemContainer);
+    
+    menuItem = createMenuItem("butterbeer-4-pack", ".png");
+    itemContainer = createItemName("Butterbeer 4 Pack - 11.95");
+    itemContainer.appendChild(menuItem)
+    menuContainer.appendChild(itemContainer);
 
     divContent.appendChild(menuContainer);
 };
@@ -36,9 +44,17 @@ function createMenuItem(urlName, format) {
     return image;
 };
 
-function createItemContainer() {
+function createItemName(itemName) {
     const container = document.createElement("div");
-    
+    container.className = "item-name-container";
+
+    const text = document.createElement("h2");
+    text.className = "item-name";
+    text.textContent = itemName;
+
+    container.appendChild(text);
+    return container;
+
 }
 
 export {createMenuPage, createMenuItem};
