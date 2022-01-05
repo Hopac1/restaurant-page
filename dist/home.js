@@ -27,18 +27,10 @@ function createHomePage(divContent) {
 
     headerDiv.appendChild(navBar);
     
-    
-    // image of food
-    // let image = document.createElement("img");
-    // image.src = "../src/chicken.jpg";
-    // image.alt = "chicken-image";
-    
-    // append all three to container div
-    // main.appendChild(image);
+
     divContent.appendChild(headerDiv);
     
     console.log("loaderJS")
-    // append container to parent container
 };
 
 function createHomeContent(divContent) {
@@ -55,7 +47,6 @@ function createHomeContent(divContent) {
     let description = document.createElement("p");
     description.textContent = "The cafe endorsed by the legendary Commander Shepard is here to bring you the best food on the entire Citadel!";
     
-    // homeContent.appendChild(headerDiv);
     homeContent.appendChild(slogan);
     homeContent.appendChild(description);
     
