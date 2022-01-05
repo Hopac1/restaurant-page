@@ -23,13 +23,10 @@ function clearPage() {
 function whatButtonWasClicked(button) {
     const buttonName = button.textContent;
     if (buttonName === "Home") {
-        // clearPage();
         createHomeContent(divContent);
     } else if (buttonName === "Menu") {
-        // clearPage();
         createMenuPage(divContent);
     } else if (buttonName === "Contact") {
-        // clearPage();
         createContactPage(divContent);
     }
 };
@@ -39,6 +36,4 @@ for (var i = 0; i < navButton.length; i++){
         // this.classList.toggle("active");
         clearPage()
         whatButtonWasClicked(this)
-        // check what button was clicked and load the corresponding page
-        // createContactPage(divContent);
 })};
