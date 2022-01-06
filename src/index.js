@@ -33,7 +33,6 @@ function whatButtonWasClicked(button) {
 
 for (var i = 0; i < navButton.length; i++){
     navButton[i].addEventListener("click", function() {
-        // this.classList.toggle("active");
         clearPage()
         whatButtonWasClicked(this)
 })};
