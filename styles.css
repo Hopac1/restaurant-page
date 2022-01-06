@@ -57,7 +57,7 @@ button {
 .nav-btn:hover {
     border-color: rgb(252, 162, 146);
     box-shadow: inset 0 0 25px red;
-    color: rgb(104, 155, 212);
+    color: rgb(122, 206, 231);
     cursor: pointer;
 }
 
@@ -87,7 +87,12 @@ h2 {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    font-size: 1.5rem;
+    font-size: 2rem;
+}
+
+.description {
+    font-size: 3rem;
+    width: 60rem;
 }
 
 /* Menu */
@@ -105,7 +110,6 @@ h2 {
 }
 
 .item-name-container {
-    /* position: relative; */
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -120,3 +124,27 @@ h2 {
 }
 
 /* Contact */
+
+.contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contact {
+    font-size: 2rem;
+    margin-top: 0;
+}
+
+.map {
+    height: 30rem;
+    object-fit: scale-down;
+    margin: 1rem;
+}
+
+.title {
+    font-size: 2.5rem;
+    color: coral;
+    margin-bottom: 0;
+}
