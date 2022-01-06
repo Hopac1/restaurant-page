@@ -6,6 +6,7 @@ function createHomePage(divContent) {
     let h1 = document.createElement("h1");
     h1.textContent = "Weasleys' Wizard Wheezes";
     
+    // shop logo
     let image = document.createElement("img");
     image.className = "shop-logo";
     image.src = "images/shop-logo.png";
@@ -48,10 +49,11 @@ function createHomeContent(divContent) {
     let homeContent = document.createElement("div");
     homeContent.className = "info-div";
     let slogan = document.createElement("h2");
-    slogan.textContent = "\"I'm Commander Shepard, and this is my favourite cafe on the Citadel!\" - Commander Shepard";
+    slogan.textContent = "From chocolate frogs to butterbeer, we sell it all!";
     
     let description = document.createElement("p");
-    description.textContent = "The cafe endorsed by the legendary Commander Shepard is here to bring you the best food on the entire Citadel!";
+    description.className = "description";
+    description.textContent = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.";
     
     homeContent.appendChild(slogan);
     homeContent.appendChild(description);
