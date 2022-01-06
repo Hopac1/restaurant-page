@@ -12,7 +12,6 @@ function createMenuPage(divContent) {
     itemContainer.appendChild(menuItem)
     menuContainer.appendChild(itemContainer);
 
-    
     menuItem = createMenuItem("exploding-bon-bons", ".png");
     itemContainer = createItemName("Exploding Bon Bons - 8.00");
     itemContainer.appendChild(menuItem)
@@ -54,7 +53,6 @@ function createItemName(itemName) {
 
     container.appendChild(text);
     return container;
-
 }
 
 export {createMenuPage, createMenuItem};
